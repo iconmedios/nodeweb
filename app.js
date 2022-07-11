@@ -2,7 +2,7 @@ const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 
 require('dotenv').config()
-const port = process.env.PORT;
+const port = process.env.PORT || 8082;
 const app = express()
 
 app.set('view engine', 'ejs')
